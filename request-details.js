@@ -2,7 +2,7 @@ const requestDetailCard = document.querySelector(".request-detail-card-main");
 const acceptButton = document.querySelector(".accept-button");
 let html = "";
 const backend_url =
-  "https://errand-app-backend.onrender.com/api/service_requests/";
+  "https://errand-app-backend.onrender.com/api/service_requests";
 const completedButton = document.querySelector(".completed-button");
 
 params = new URLSearchParams(window.location.search);
@@ -91,3 +91,4 @@ completedButton.addEventListener("click", () => {
   document.querySelector(".completed").style.display = "block";
   completedButton.style.display = "none";
 });
+
