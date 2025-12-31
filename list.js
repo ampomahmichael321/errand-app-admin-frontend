@@ -1,7 +1,7 @@
 const main = document.querySelector(".main");
 let html = "";
 
-fetch("https://errand-app-backend.onrender.com/api/service_requests")
+fetch("https://errand-app-backend.onrender.com/api/service_requests/")
   .then((response) => response.json())
   .then((items) => {
     let svg_path = "";
@@ -36,4 +36,5 @@ fetch("https://errand-app-backend.onrender.com/api/service_requests")
     });
     main.innerHTML = html;
   });
+
 
